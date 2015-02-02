@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>My Most Hideous Page Ever</title>
+
+    <!--
+      We are going to start using normalize.css by Nicolas Gallagher to
+      get our browsers to render things more consistently out of the 
+      box; saves us some time in cross-browser issues later on
+    -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Here we are adding in our link to the CSS file for our page -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+
+  <body>
+
+    <h1>My Most Hideous Page Ever</h1>
+
+    <p>
+      <strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. 
+    </p>
+
+    <nav>
+      <a href="#kittens">To the kittens</a>
+      <a href="#comments">But puppies are cuter</a>
+    </nav>
+
+
+    <section id="kittens">
+      <h2>
+        <a href="http://placekitten.com" target="_blank">Kittens are da cutest!</a>
+      </h2>
+
+      <figure>
+
+        <img src="img/kitten.jpg" height="480" width="600" alt="A kitten">
+        <figcaption>It's a bundle of cute, cuddly, death!</figcaption>
+
+      </figure>
+
+      <ol>
+        <li><em>First reason why kittens are death</em></li>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ol>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+    </section>
+
+
+    <section id="comments">
+      <h2>
+        <a href="http://placedog.com">But puppies are cuter!</a>
+      </h2>
+
+      <p>Feel free to submit your comments on why puppies are cuter:</p>
+
+      <form method="post" action="#">
+        
+        <!-- 
+          In this case we add in the div to help bundle the
+          label and input for styling purposes
+        -->
+        <div class="input-wrapper">
+          <label for="form-name">Name:</label>
+          <input type="text" id="form-name" placeholder="Jane Doe">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="form-subject">Subject:</label>
+          <input type="text" id="form-subject" placeholder="A title for your comment">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="form-comment">Comment:</label>
+          <textarea id="form-comment" placeholder="Please place comment here"></textarea>
+        </div>
+
+        <input type="submit" value="Submit your comment">
+
+      </form>
+
+    </section>
+
+
+    <!--
+      HTML5shiv helps us translate HTML5 tags for older devices
+    -->
+    <script src="js/html5shiv.js"></script>
+  </body>
+</html>
